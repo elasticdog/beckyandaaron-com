@@ -1,0 +1,371 @@
+/*
+Title:   screen.css - beckyandaaron.com
+Author:  Aaron Schaefer <aaron@elasticdog.com>
+*/
+
+@import url(reset.css);
+
+/* -----( STRUCTURE )-------------------------------------------------------- */
+
+body {
+	background: #DDBF8A url('../images/body-bg.png') repeat-x fixed;
+	color: #61564E;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+	}
+
+#wrapper {
+	background-color: #FCF9E8;
+	border: 5px solid #8C6239;
+	margin: 20px auto;
+	width: 850px;
+	}
+
+
+/* -----( GLOBAL )----------------------------------------------------------- */
+
+em {
+	font-style: italic;
+	}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	}
+
+h1 { font-size: 2.1em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+
+hr {
+	clear: both;
+	display: none;
+	}
+
+p {
+	font: 1.4em/150% Verdana, Helvetica, Arial, sans-serif;
+	margin: 1.5em 0;
+	}
+
+strong {
+	font-weight: bold;
+	}
+
+ul {
+	font: 1.4em/150% Verdana, Helvetica, Arial, sans-serif;
+	}
+
+a:link,
+a:visited {
+    text-decoration: none;
+	}
+a:link:focus,
+a:visited:focus {
+	border-bottom: 1px solid #03C;
+	color: #03C;
+	}
+a:link {
+	border-bottom: 1px solid #06C;
+	color: #06C;
+	}
+a:visited {
+	border-bottom: 1px solid #4D0073;
+	color: #4D0073;
+	}
+a:link:hover,
+a:visited:hover {
+	border-bottom: 1px solid #03C;
+	color: #03C;
+	}
+a:link:active,
+a:visited:active {
+	border-bottom: 1px solid #03C;
+	color: #03C;
+	}
+
+
+
+/* -----( HEADER )----------------------------------------------------------- */
+
+#header {
+	background: #FCF9E8 url('../images/header-bg.jpg') no-repeat;
+	height: 200px;
+	}
+
+#header a:link,
+#header a:visited {
+	display: block;
+	height: 200px;
+	overflow: hidden;
+	text-indent: -9000px;
+	width: 100%;
+	}
+
+
+
+/* -----( NAVIGATION )------------------------------------------------------- */
+
+.nav {
+	background: #8C6329 url('../images/navigation.png') no-repeat;
+	height: 40px;
+	position: absolute;
+	width: 850px;
+	}
+
+.nav li {
+	display: inline;
+	}
+
+.nav li a:link,
+.nav li a:visited {
+	border: none;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9000px;
+	top: 0;
+	z-index: 10;
+	}
+
+.nav .welcome a:link,
+.nav .welcome a:visited {
+	left: 90px;
+	width: 79px;
+	}
+.nav .welcome a:hover,
+.nav .welcome a:focus {
+	background: url('../images/navigation.png') no-repeat -90px -41px;
+	}
+.nav .welcome.current a:link,
+.nav .welcome.current a:visited {
+	background: url('../images/navigation.png') no-repeat -90px -82px;
+	cursor: default;
+	}
+.nav-welcome {
+	display: block;
+	background: url('../images/navigation.png') no-repeat -90px -41px;
+	height: 40px;
+	left: 90px;
+	position: absolute;
+	width: 79px;
+	}
+
+.nav .about a:link,
+.nav .about a:visited {
+	left: 209px;
+	width: 83px;
+	}
+.nav .about a:hover,
+.nav .about a:focus {
+	background: url('../images/navigation.png') no-repeat -209px -41px;
+	}
+.nav .about.current a:link,
+.nav .about.current a:visited {
+	background: url('../images/navigation.png') no-repeat -209px -82px;
+	cursor: default;
+	}
+.nav-about {
+	display: block;
+	background: url('../images/navigation.png') no-repeat -209px -41px;
+	height: 40px;
+	left: 209px;
+	position: absolute;
+	top: 0;
+	width: 83px;
+	}
+
+.nav .ceremony a:link,
+.nav .ceremony a:visited {
+	left: 335px;
+	width: 119px;
+	}
+.nav .ceremony a:hover,
+.nav .ceremony a:focus {
+	background: url('../images/navigation.png') no-repeat -335px -41px;
+	}
+.nav .ceremony.current a:link,
+.nav .ceremony.current a:visited {
+	background: url('../images/navigation.png') no-repeat -335px -82px;
+	cursor: default;
+	}
+.nav-ceremony {
+	display: block;
+	background: url('../images/navigation.png') no-repeat -335px -41px;
+	height: 40px;
+	left: 335px;
+	position: absolute;
+	top: 0;
+	width: 119px;
+	}
+
+.nav .reception a:link,
+.nav .reception a:visited {
+	left: 497px;
+	width: 118px;
+	}
+.nav .reception a:hover,
+.nav .reception a:focus {
+	background: url('../images/navigation.png') no-repeat -497px -41px;
+	}
+.nav .reception.current a:link,
+.nav .reception.current a:visited {
+	background: url('../images/navigation.png') no-repeat -497px -82px;
+	cursor: default;
+	}
+.nav-reception {
+	display: block;
+	background: url('../images/navigation.png') no-repeat -497px -41px;
+	height: 40px;
+	left: 497px;
+	position: absolute;
+	top: 0;
+	width: 118px;
+	}
+
+.nav .registries a:link,
+.nav .registries a:visited {
+	left: 657px;
+	width: 115px;
+	}
+.nav .registries a:hover,
+.nav .registries a:focus {
+	background: url('../images/navigation.png') no-repeat -657px -41px;
+	}
+.nav .registries.current a:link,
+.nav .registries.current a:visited {
+	background: url('../images/navigation.png') no-repeat -657px -82px;
+	cursor: default;
+	}
+.nav-registries {
+	display: block;
+	background: url('../images/navigation.png') no-repeat -657px -41px;
+	height: 40px;
+	left: 657px;
+	position: absolute;
+	top: 0;
+	width: 115px;
+	}
+
+
+
+/* -----( CONTENT )---------------------------------------------------------- */
+
+#container {
+	padding-top: 40px;
+	}
+
+#content {
+	margin: 38px;
+	}
+
+#content h2 {
+	display: block;
+	height: 34px;
+	text-indent: -3000px;
+	}
+
+#content h2.welcome {
+	background: #FCF9E8 url('../images/welcome.png') no-repeat 0 0;
+	overflow: hidden;
+	width: 102px;
+	}
+
+#content h2.about {
+	background: #FCF9E8 url('../images/about.png') no-repeat 0 0;
+	overflow: hidden;
+	width: 141px;
+	}
+
+#content h2.ceremony {
+	background: #FCF9E8 url('../images/ceremony.png') no-repeat 0 0;
+	height: 44px;
+	margin-bottom: -10px;
+	overflow: hidden;
+	width: 192px;
+	}
+
+#content h2.reception {
+	background: #FCF9E8 url('../images/reception.png') no-repeat 0 0;
+	height: 44px;
+	margin-bottom: -10px;
+	overflow: hidden;
+	width: 194px;
+	}
+
+#content h2.registries {
+	background: #FCF9E8 url('../images/registries.png') no-repeat 0 0;
+	height: 45px;
+	margin-bottom: -11px;
+	overflow: hidden;
+	width: 201px;
+	}
+
+#content p.address {
+	border-left: 10px solid #61564E;
+	padding-left: 40px;
+	}
+
+#content p.center {
+	text-align: center;
+}
+#content p.left {
+	float: left;
+	padding-right: 32px;
+	}
+#content p.right {
+	float: right;
+	padding-left: 32px;
+	}
+
+#content img.picture {
+	border: 1px solid #61564E;
+	background-color: #FFF;
+	padding: 5px;
+	}
+
+#content img.up {
+	margin-top: -34px;
+	}
+
+#content ul {
+	list-style: square inside;
+	margin-bottom: 1.5em;
+	}
+
+#content a:link.banner,
+#content a:visited.banner {
+	border: none;
+	}
+
+
+
+/* -----( MISCELLANEOUS )---------------------------------------------------- */
+
+#skiplink {
+    margin: 0;
+	}
+
+#skiplink :link,
+#skiplink :visited {
+	left: 36px;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 24px;
+	width: 0;
+	z-index: 1;
+	}
+#skiplink :active,
+#skiplink :focus {
+	background: #FF0;
+	border: 5px solid #C00;
+	color: #000;
+	font: bold 1em sans-serif;
+	height: auto;
+	overflow: visible;
+	padding: 0.5em;
+	text-decoration: underline;
+	width: auto;
+	}
+
