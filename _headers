@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+  Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' https://*.cloudfront.com; connect-src 'self'; img-src 'self' https://*.cloudfront.com; style-src 'self' https://*.cloudfront.com;
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-Frame-Options: deny
