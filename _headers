@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' https://*.cloudfront.com; connect-src 'self'; img-src 'self' https://*.cloudfront.com; style-src 'self' https://*.cloudfront.com;
+  Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' https://*.cloudfront.net; connect-src 'self'; img-src 'self' https://*.cloudfront.net; style-src 'self' https://*.cloudfront.net; report-uri https://elasticdog.report-uri.com/r/d/csp/enforce
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-Frame-Options: deny
